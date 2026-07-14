@@ -126,16 +126,16 @@ s3-boto3-task/
 
 ---
 
-# 🔗 Python Scripts
+# 🔗 Python Scripts Used
 
-The repository contains the following boto3 automation scripts:
+The following Python boto3 scripts were created and used to automate S3 management tasks:
 
-- [list_buckets.py](list_buckets.py)
-- [create_bucket.py](create_bucket.py)
-- [upload_file.py](upload_file.py)
-- [download_file.py](download_file.py)
-- [delete_file.py](delete_file.py)
-- [delete_bucket.py](delete_bucket.py)
+- `list_buckets.py` – Lists all S3 buckets.
+- `create_bucket.py` – Creates an S3 bucket.
+- `upload_file.py` – Uploads a file to an S3 bucket.
+- `download_file.py` – Downloads a file from an S3 bucket.
+- `delete_file.py` – Deletes an object from an S3 bucket.
+- `delete_bucket.py` – Deletes an S3 bucket.
 
 ---
 
