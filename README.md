@@ -53,17 +53,17 @@ Removed S3 buckets
 
 Example commands used:
 
+Create an S3 bucket:
+
 aws s3 mb s3://bucket-name
 
-Creates an S3 bucket.
+Upload a file:
 
 aws s3 cp file.txt s3://bucket-name
 
-Uploads a file to S3.
+List objects stored in a bucket:
 
 aws s3 ls s3://bucket-name
-
-Lists objects stored in a bucket.
 
 📸 Screenshot needed:
 
