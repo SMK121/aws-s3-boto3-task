@@ -6,11 +6,16 @@ This task demonstrates how to set up and manage Amazon S3 storage using both the
 
 The aim was to:
 
-- 🖥️ Configure AWS tools on an Ubuntu EC2 instance
-- 🔐 Authenticate AWS CLI access
-- 🪣 Create and manage S3 resources using AWS CLI commands
-- 🐍 Use Python boto3 to automate S3 bucket and object management
-- 🔄 Perform the full S3 lifecycle: create, upload, download, delete files, and remove buckets
+- Configure AWS CLI on an Ubuntu EC2 instance
+- Authenticate AWS services using AWS credentials
+- Create and manage S3 resources using AWS CLI
+- Automate S3 operations using Python boto3
+- Perform the full S3 lifecycle:
+  - Create a bucket
+  - Upload files
+  - Download files
+  - Delete objects
+  - Delete buckets
 
 ---
 
@@ -18,36 +23,21 @@ The aim was to:
 
 By completing this task, I was able to:
 
-- ⚙️ Install and configure AWS CLI on an Ubuntu EC2 instance
-- 🔑 Authenticate AWS services using AWS credentials
-- 🪣 Create and manipulate S3 buckets using AWS CLI
-- 🐍 Set up a Python environment for AWS automation
-- 📦 Install and use the boto3 AWS SDK for Python
-- 📝 Create Python scripts to manage S3 resources
-- ⬆️ Upload and retrieve files from S3 using Python
-- 🗑️ Delete S3 objects and buckets programmatically
+- Install and configure AWS CLI
+- Authenticate AWS access using `aws configure`
+- Manage S3 storage using AWS CLI commands
+- Set up a Python virtual environment
+- Install and use the boto3 AWS SDK
+- Create Python scripts to automate S3 operations
+- Upload, retrieve, and remove S3 objects programmatically
 
----
-
-# 🖥️ Environment Setup
-
-## ☁️ EC2 Instance
-
-The work was completed on an Ubuntu 24.04 LTS EC2 instance.
-
-Instance details:
-
-- 🐧 Operating System: Ubuntu 24.04 LTS
-- 💻 Instance Type: t3.micro
-- 🌍 AWS Region: eu-west-1
- 
 ---
 
 # 🛠️ AWS CLI Setup
 
-## 📥 Install AWS CLI
+## Install AWS CLI
 
-AWS CLI was installed on the EC2 instance to allow interaction with AWS services from the command line.
+AWS CLI was installed on the Ubuntu EC2 instance to allow command-line interaction with AWS services.
 
 Commands used:
 
