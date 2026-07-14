@@ -12,6 +12,7 @@ The task was completed using an Ubuntu 24.04 LTS EC2 instance.
 The objectives were to:
 
 - Install and configure AWS CLI
+- Set up a Python environment with required dependencies
 - Authenticate AWS services using AWS credentials
 - Create and manage S3 storage using AWS CLI
 - Automate S3 operations using Python boto3
@@ -39,11 +40,11 @@ Amazon Simple Storage Service (S3) is AWS's object storage service used to store
 ## Key Features
 
 - Stores and retrieves any amount of data
-- Highly scalable and durable storage
+- Highly scalable and durable cloud storage
 - Built-in redundancy across Availability Zones
-- Can host static websites
+- Can be used to host static websites
 - Accessible through:
-  - AWS Console
+  - AWS Management Console
   - AWS CLI
   - AWS SDKs such as Python boto3
 
@@ -61,13 +62,13 @@ By default, S3 objects are private and require permissions to allow public acces
 
 ---
 
-# 🛠️ Installing AWS CLI on Ubuntu
+# 🛠️ AWS CLI Setup
 
 AWS CLI was installed on the Ubuntu EC2 instance to allow command-line interaction with AWS services.
 
 ---
 
-## Update Package List
+## Update Ubuntu Packages
 
 ```bash
 sudo apt update -y
