@@ -40,7 +40,7 @@ Instance details:
 - 🐧 Operating System: Ubuntu 24.04 LTS
 - 💻 Instance Type: t3.micro
 - 🌍 AWS Region: eu-west-1
-
+ 
 ---
 
 # 🛠️ AWS CLI Setup
