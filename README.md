@@ -157,10 +157,17 @@ s3-boto3-task/
 ├── delete_file.py
 └── delete_bucket.py
 
-📸 Screenshot needed:
 
 VS Code project folder showing Python scripts
 🔗 Python Scripts
+
+https://github.com/user-attachments/assets/07f525f6-9a15-4724-8cc6-2840258c530d/>
+
+
+
+
+
+
 
 The completed boto3 automation scripts are included in this repository:
 
