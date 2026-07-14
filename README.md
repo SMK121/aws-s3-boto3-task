@@ -59,7 +59,7 @@ pip install boto3
 
 ---
 
-# 🪣 AWS CLI Commands to Manipulate S3 Storage
+# 🪣 Managing S3 Storage Using AWS CLI
 
 AWS CLI was used to manually manage S3 storage by creating buckets, uploading files, downloading files, and deleting resources.
 
