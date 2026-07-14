@@ -2,151 +2,116 @@
 
 ## 📌 Task Overview
 
-This project demonstrates how Amazon S3 storage was managed using AWS CLI and Python boto3.
+This project demonstrates how Amazon S3 storage can be managed using both AWS CLI and the Python boto3 SDK on an Ubuntu 24.04 LTS EC2 instance.
 
-The task involved setting up AWS tools on an Ubuntu EC2 instance and automating S3 operations using Python scripts.
+The task included configuring AWS CLI, authenticating with AWS, managing S3 resources manually, and automating the same operations using Python scripts.
 
-The main objectives were:
+---
 
-- Configure AWS CLI and AWS authentication
-- Create and manage S3 buckets
-- Upload and download files from S3
-- Delete S3 objects and buckets
-- Automate S3 management using Python boto3
+# 🎯 Learning Outcomes
+
+By completing this task, I was able to:
+
+- Install and configure AWS CLI
+- Authenticate AWS services using `aws configure`
+- Manage S3 buckets and objects using AWS CLI
+- Set up a Python virtual environment
+- Install and use the boto3 AWS SDK
+- Automate S3 operations using Python
 
 ---
 
 # 🛠️ Environment Setup
 
-The task was completed using:
+The project was completed using:
 
-- AWS EC2 Ubuntu 24.04 LTS instance
+- Ubuntu 24.04 LTS EC2 instance
 - AWS CLI
 - Python 3
-- Python virtual environment
-- boto3 AWS SDK
+- Python Virtual Environment (`venv`)
+- boto3
 
 AWS CLI was configured using:
 
 ```bash
 aws configure
+```
 
-This allowed the EC2 instance to authenticate and communicate with AWS services.
+A Python virtual environment was created and boto3 installed:
 
-AWS CLI authentication (aws configure)
-Successful AWS connection (aws s3 ls)
-🪣 AWS CLI S3 Management
+```bash
+python3 -m venv venv
 
-AWS CLI was used to manually manage S3 storage.
+source venv/bin/activate
 
-Completed operations:
+pip install boto3
+```
 
-Created an S3 bucket
-Listed available buckets
-Uploaded files to S3
-Checked bucket contents
-Downloaded files from S3
-Removed S3 objects
-Removed S3 buckets
+---
 
-Example commands used:
+# 🪣 AWS CLI S3 Management
 
-Create an S3 bucket:
+AWS CLI was used to perform manual S3 operations including:
 
+- Creating an S3 bucket
+- Listing S3 buckets
+- Uploading files
+- Viewing bucket contents
+- Downloading files
+- Deleting S3 objects
+- Deleting S3 buckets
+
+Example commands:
+
+```bash
 aws s3 mb s3://bucket-name
 
-Upload a file:
+aws s3 ls
 
-aws s3 cp file.txt s3://bucket-name
+aws s3 cp test.txt s3://bucket-name
 
-List objects stored in a bucket:
+aws s3 cp s3://bucket-name/test.txt .
 
-aws s3 ls s3://bucket-name
+aws s3 rm s3://bucket-name/test.txt
 
+aws s3 rb s3://bucket-name
+```
 
+---
 
-📸 Screenshot needed:
+# 🐍 Python boto3 Automation
 
-AWS CLI bucket creation
-AWS CLI upload working
-File visible inside S3 bucket
-🐍 Python boto3 Setup
+After configuring AWS CLI, boto3 was used to automate S3 management through simple Python scripts.
 
-After configuring AWS CLI, boto3 was installed inside a Python virtual environment.
+Each script performs one task without unnecessary complexity.
 
-boto3 was used to automate S3 management tasks using Python scripts.
+| Script | Purpose |
+|---------|---------|
+| `list_buckets.py` | List all S3 buckets |
+| `create_bucket.py` | Create an S3 bucket |
+| `upload_file.py` | Upload a file to S3 |
+| `download_file.py` | Download a file from S3 |
+| `delete_file.py` | Delete an object from S3 |
+| `delete_bucket.py` | Delete an S3 bucket |
 
-The scripts created were:
+---
 
-Script	Purpose
-list_buckets.py	Lists all S3 buckets
-create_bucket.py	Creates an S3 bucket
-upload_file.py	Uploads a file to S3
-download_file.py	Downloads a file from S3
-delete_file.py	Deletes an S3 object
-delete_bucket.py	Deletes an S3 bucket
+# 🚀 Completed boto3 Tasks
 
-📸 Screenshot needed:
+The following operations were completed successfully using Python boto3:
 
-Project folder showing all Python scripts
-🚀 boto3 List and Create S3 Bucket
+- Listed available S3 buckets
+- Created a new S3 bucket
+- Uploaded `test.txt`
+- Downloaded `test.txt`
+- Deleted the uploaded object
+- Deleted the S3 bucket
 
-The list_buckets.py script was used to display available S3 buckets.
+---
 
-The create_bucket.py script was used to create a new S3 bucket:
+# 📁 Project Structure
 
-tech610-suhaib-test-boto3
-
-📸 Screenshot needed:
-
-boto3 create bucket working
-boto3 list buckets output
-📤 Upload File Using boto3
-
-The upload_file.py script uploads a local file into the S3 bucket.
-
-File uploaded:
-
-test.txt
-
-Example output:
-
-Uploaded test.txt to tech610-suhaib-test-boto3
-
-📸 Screenshot needed:
-
-boto3 upload successful output
-📥 Download File Using boto3
-
-The download_file.py script retrieves a file from S3 back to the EC2 instance.
-
-Example output:
-
-Downloaded test.txt from tech610-suhaib-test-boto3
-
-📸 Screenshot needed:
-
-boto3 download successful output
-🗑️ Delete S3 Object Using boto3
-
-The delete_file.py script removes an object from the S3 bucket.
-
-This completes the object deletion stage of the S3 lifecycle.
-
-📸 Screenshot needed:
-
-boto3 deleted S3 object output
-🪣 Delete S3 Bucket Using boto3
-
-The delete_bucket.py script removes the S3 bucket after all objects have been deleted.
-
-📸 Screenshot needed:
-
-boto3 bucket deletion output
-📁 Project Structure
-
-The final project contains:
-
+```
 s3-boto3-task/
 
 ├── README.md
@@ -155,39 +120,35 @@ s3-boto3-task/
 ├── upload_file.py
 ├── download_file.py
 ├── delete_file.py
-└── delete_bucket.py
+├── delete_bucket.py
+└── test.txt
+```
 
+---
 
-VS Code project folder showing Python scripts
-🔗 Python Scripts
+# 🔗 Python Scripts
 
-(https://github.com/user-attachments/assets/55491973-2b8f-497d-9cfe-a6b4d9032f74)
+The repository contains the following boto3 automation scripts:
 
+- [list_buckets.py](list_buckets.py)
+- [create_bucket.py](create_bucket.py)
+- [upload_file.py](upload_file.py)
+- [download_file.py](download_file.py)
+- [delete_file.py](delete_file.py)
+- [delete_bucket.py](delete_bucket.py)
 
+---
 
+# ✅ Final Outcome
 
+This project successfully demonstrates how to manage Amazon S3 storage using both AWS CLI and Python boto3.
 
+The completed solution includes:
 
+- AWS CLI installation and authentication
+- S3 bucket creation and management
+- File upload and download
+- Object and bucket deletion
+- Python automation using six separate boto3 scripts
 
-
-The completed boto3 automation scripts are included in this repository:
-
-list_buckets.py
-create_bucket.py
-upload_file.py
-download_file.py
-delete_file.py
-delete_bucket.py
-✅ Final Outcome
-
-Successfully completed AWS S3 management using:
-
-AWS CLI for manual S3 operations
-Python boto3 for automation
-
-The project demonstrates the ability to:
-
-Configure AWS services
-Authenticate using AWS credentials
-Manage cloud storage resources
-Automate AWS tasks using Python
+This project provides a simple example of using the AWS SDK for Python to automate common cloud storage tasks.
