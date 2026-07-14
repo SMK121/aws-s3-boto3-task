@@ -2,7 +2,7 @@
 
 ## 📌 Task Overview
 
-This project demonstrates how Amazon S3 storage can be managed using both AWS CLI and the Python boto3 SDK on an Ubuntu 24.04 LTS EC2 instance.
+This project demonstrates how Amazon S3 storage can be managed using both AWS CLI and the Python boto3 on an Ubuntu 24.04 LTS EC2 instance.
 
 The task included configuring AWS CLI, authenticating with AWS, managing S3 resources manually, and automating the same operations using Python scripts.
 
