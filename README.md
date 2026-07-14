@@ -33,8 +33,6 @@ aws configure
 
 This allowed the EC2 instance to authenticate and communicate with AWS services.
 
-📸 Screenshot needed:
-
 AWS CLI authentication (aws configure)
 Successful AWS connection (aws s3 ls)
 🪣 AWS CLI S3 Management
@@ -64,6 +62,8 @@ aws s3 cp file.txt s3://bucket-name
 List objects stored in a bucket:
 
 aws s3 ls s3://bucket-name
+
+
 
 📸 Screenshot needed:
 
