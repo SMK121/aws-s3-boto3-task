@@ -164,7 +164,7 @@ Delete all objects inside a bucket:
 aws s3 rm s3://tech610-suhaib-first-bucket --recursive
 ```
 
-⚠️ This removes all objects stored inside the bucket.
+This removes all objects stored inside the bucket.
 
 ---
 
@@ -182,7 +182,7 @@ Delete a bucket and all contents:
 aws s3 rb s3://tech610-suhaib-first-bucket --force
 ```
 
-⚠️ This removes the bucket and all objects stored inside it.
+This removes the bucket and all objects stored inside it.
 
 ---
 
