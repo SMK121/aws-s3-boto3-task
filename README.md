@@ -41,8 +41,6 @@ Instance details:
 - 💻 Instance Type: t3.micro
 - 🌍 AWS Region: eu-west-1
 
-📸 **Add image here: EC2 instance details screenshot**
-
 ---
 
 # 🛠️ AWS CLI Setup
