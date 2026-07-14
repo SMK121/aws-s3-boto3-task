@@ -2,48 +2,72 @@
 
 ## 📌 Task Overview
 
-This task demonstrates how to set up and manage Amazon S3 storage using both the AWS Command Line Interface (CLI) and Python boto3.
+This project demonstrates how to configure and manage Amazon Simple Storage Service (S3) using:
 
-The aim was to:
+- AWS Command Line Interface (CLI)
+- Python boto3 SDK
 
-- Configure AWS CLI on an Ubuntu EC2 instance
-- Authenticate AWS services using AWS credentials
-- Create and manage S3 resources using AWS CLI
-- Automate S3 operations using Python boto3
-- Perform the full S3 lifecycle:
-  - Create a bucket
-  - Upload files
-  - Download files
-  - Delete objects
-  - Delete buckets
+The task was completed using an Ubuntu 24.04 LTS EC2 instance.
 
----
-
-# 🎯 Objectives / Outcomes
-
-By completing this task, I was able to:
+The objectives were to:
 
 - Install and configure AWS CLI
-- Authenticate AWS access using `aws configure`
-- Manage S3 storage using AWS CLI commands
-- Set up a Python virtual environment
-- Install and use the boto3 AWS SDK
-- Create Python scripts to automate S3 operations
-- Upload, retrieve, and remove S3 objects programmatically
+- Authenticate AWS services using AWS credentials
+- Create and manage S3 storage using AWS CLI
+- Automate S3 operations using Python boto3
+- Create, upload, download, and delete S3 resources
 
 ---
 
-# 🛠️ AWS CLI Setup
+# 🎯 Learning Outcomes
 
-## Install AWS CLI
+By completing this task, I gained practical experience with:
+
+- AWS S3 object storage
+- AWS CLI commands
+- AWS authentication using IAM credentials
+- Python virtual environments
+- AWS SDK for Python (boto3)
+- Automating cloud resource management using Python scripts
+
+---
+
+# 🪣 What is Amazon S3?
+
+Amazon Simple Storage Service (S3) is AWS's object storage service used to store and retrieve data from anywhere.
+
+## Key Features
+
+- Stores and retrieves any amount of data
+- Highly scalable and durable storage
+- Built-in redundancy across Availability Zones
+- Can host static websites
+- Accessible through:
+  - AWS Console
+  - AWS CLI
+  - AWS SDKs such as Python boto3
+
+## Common Uses
+
+S3 is commonly used for:
+
+- Application files
+- Images and videos
+- Log files
+- Backups
+- Static website resources
+
+By default, S3 objects are private and require permissions to allow public access.
+
+---
+
+# 🛠️ Installing AWS CLI on Ubuntu
 
 AWS CLI was installed on the Ubuntu EC2 instance to allow command-line interaction with AWS services.
 
-Commands used:
+---
+
+## Update Package List
 
 ```bash
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
-unzip awscliv2.zip
-
-sudo ./aws/install
+sudo apt update -y
