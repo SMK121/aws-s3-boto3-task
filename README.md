@@ -16,7 +16,7 @@ By completing this task, I was able to:
 - Authenticate AWS services using `aws configure`
 - Manage S3 buckets and objects using AWS CLI
 - Set up a Python virtual environment
-- Install and use the boto3 AWS SDK
+- Install and use the boto3 AWS 
 - Automate S3 operations using Python
 
 ---
